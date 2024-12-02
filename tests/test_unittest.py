@@ -8,6 +8,7 @@ class TestMyModule(unittest.TestCase):
         self.assertEqual(add_numbers(2, 3), 5)  # 2 + 3 = 5
         self.assertEqual(add_numbers(-1, 1), 0) # -1 + 1 = 0
         self.assertNotEqual(add_numbers(2, 2), 5)  # 2 + 2 ≠ 5
+        self.assertNotEqual(add_numbers(2, 2), 4)  # 2 + 2 ≠ 5
 
 if __name__ == '__main__':
     unittest.main()
